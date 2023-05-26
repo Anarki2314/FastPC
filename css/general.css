@@ -1,0 +1,114 @@
+:root{
+    --main-color:#393939;
+    --fs-text:clamp(0.9rem, 1.3vw, 1.25rem);
+    --fs-block-title:clamp(1.1rem, 1.4vw, 1.5rem)
+}
+@font-face {
+    font-family: "Mont Bold";
+    src: url("../assets/fonts/MontserratAlternates-Bold.ttf");
+}
+@font-face {
+    font-family: "Mont Medium";
+    src: url("../assets/fonts/MontserratAlternates-Medium.ttf");
+}
+@font-face {
+    font-family: "Mont Regular";
+    src: url("../assets/fonts/MontserratAlternates-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mont Regular", sans-serif;
+}
+.wrapper{
+    overflow: hidden;
+}
+
+h1,h2,h3,h4{
+    font-family: "Mont Bold", sans-serif;
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-weight: 700;
+}
+a:any-link{
+    text-decoration: none;
+    color: inherit;
+}
+section, footer {
+    padding: min(75px, calc(25px + 3vw)) 0;
+}
+
+footer.dark ,section.dark {
+    background: #393939;
+    color: white;
+}
+.section_title{
+    text-transform: uppercase;
+    text-align:center;
+}
+.section_subtitle{
+    font-size: clamp(1.2rem, 1.7vw, 1.75rem);
+    text-align:center;
+    padding: min(60px, calc(20px + 2.75vw)) 0;
+
+}
+.container{
+    width: min(1600px, 90vw);
+    margin:0 auto;
+}
+.d-flex{
+    display:flex;
+}
+.jc-space-a{
+    justify-content: space-around;
+}
+.jc-space-b{
+    justify-content: space-between;
+}
+.ai-center{
+    align-items: center;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.bold{
+    font-family: "Mont Bold";
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+/*! ------GRADIENT------ */
+
+
+.text_grad {
+    background: linear-gradient(90deg, #F62D2D 50%, #9D41FF 100%);
+    background-size: 200% 100%;
+    background-clip: text;
+    background-position: 100%;
+    -webkit-background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-background-position: 100%;
+    color: transparent;
+    font-family: "Mont Bold", sans-serif;
+}
+
+.rev {
+    background: linear-gradient(90deg, #9D41FF 50%, #F62D2D 100%);
+    background-size: 200% 100%;
+    background-clip: text;
+    background-position: 100%;
+    -webkit-background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-background-position: 100%;
+    color: transparent;
+    font-family: "Mont Bold", sans-serif;
+
+}
+
+
